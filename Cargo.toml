@@ -26,7 +26,7 @@ tracing = "0.1"
 
 [workspace.dependencies.xmodits-lib]
 git = "https://github.com/B0ney/xmodits-lib.git"
-rev = "7d6cdd1"
+rev = "f5674a2"
 features = ["serde"]
 
 [workspace.dependencies.iced]
