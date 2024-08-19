@@ -8,15 +8,15 @@ pub use config::Config;
 pub use theme::Theme;
 pub use time::Time;
 
-use xmodits_lib::exporter::AudioFormat;
+use xmodits_lib::export::Format;
 
-pub const SUPPORTED_FORMATS: &[AudioFormat] = &[
-    AudioFormat::WAV,
-    AudioFormat::AIFF,
-    AudioFormat::ITS,
-    AudioFormat::S3I,
-    AudioFormat::IFF,
-    AudioFormat::RAW,
+pub const SUPPORTED_FORMATS: &[Format] = &[
+    Format::WAV,
+    Format::AIFF,
+    Format::ITS,
+    Format::S3I,
+    Format::IFF,
+    Format::RAW,
 ];
 
 #[cfg(feature = "manual")]

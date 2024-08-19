@@ -3,7 +3,7 @@
 use std::path::{Path, PathBuf};
 
 use data::config::SampleRippingConfig;
-use xmodits_lib::exporter::AudioFormat;
+use xmodits_lib::export::Format;
 
 use crate::style;
 use crate::utils::folder_dialog;
@@ -24,7 +24,7 @@ pub fn destination_is_valid(ripping: &SampleRippingConfig) -> bool {
 
 #[derive(Debug, Clone)]
 pub enum Message {
-    ExportFormat(AudioFormat),
+    ExportFormat(Format),
     SelfContained(bool),
     StrictLoad(bool),
     WorkerThreads(Workers),

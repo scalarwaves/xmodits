@@ -2,7 +2,7 @@ pub use super::SampleNameConfig;
 
 use serde::{Deserialize, Serialize};
 use std::path::PathBuf;
-use xmodits_lib::exporter::AudioFormat;
+use xmodits_lib::export::Format;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 #[serde(default)]
@@ -12,7 +12,7 @@ pub struct SampleRippingConfig {
     pub folder_max_depth: u8,
     pub strict: bool,
     pub worker_threads: usize,
-    pub exported_format: AudioFormat,
+    pub exported_format: Format,
 }
 
 impl Default for SampleRippingConfig {

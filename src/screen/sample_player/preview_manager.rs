@@ -24,7 +24,6 @@ pub enum Message {
 pub struct SamplePreview {
     audio_engine: SamplePlayer,
     windows: HashMap<Id, Instance>,
-    singleton: bool,
     default_settings: MediaSettings,
 }
 
